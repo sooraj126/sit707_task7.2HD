@@ -3,6 +3,18 @@ steps:
   entrypoint: 'mvn'
   args: ['test']
   
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    [
+      'build',
+      '-t',
+      'gcr.io/$PROJECT_ID/calculator-app',
+      '.'
+    ]
+
+images:
+  - 'gcr.io/$PROJECT_ID/calculator-app'
+
 
 options:
   logging: CLOUD_LOGGING_ONLY
