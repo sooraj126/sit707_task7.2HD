@@ -1,7 +1,4 @@
 steps:
-	
-  # Step 1: Run Maven tests
-  
-  - name: 'maven:3.9.6-eclipse-temurin-11'
-    entrypoint: 'mvn'
-    args: ['test']
+- name: 'maven:3.9.6-eclipse-temurin-11'
+  entrypoint: 'mvn'
+  args: ['test']
