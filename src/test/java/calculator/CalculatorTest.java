@@ -3,7 +3,7 @@ package calculator;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class Calculatortest {
+public class CalculatorTest {
 
     Calculator calculator = new Calculator();
 
