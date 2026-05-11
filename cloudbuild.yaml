@@ -8,12 +8,19 @@ steps:
     [
       'build',
       '-t',
-      'gcr.io/$PROJECT_ID/calculator-app',
+      'australia-southeast1-docker.pkg.dev/$PROJECT_ID/calculator-repo/calculator-app',
       '.'
     ]
 
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+	[
+	  'push',
+	  'australia-southeast1-docker.pkg.dev/$PROJECT_ID/calculator-repo/calculator-app'
+	]
+
 images:
-  - 'gcr.io/$PROJECT_ID/calculator-app'
+- 'australia-southeast1-docker.pkg.dev/$PROJECT_ID/calculator-repo/calculator-app'
 
 
 options:
