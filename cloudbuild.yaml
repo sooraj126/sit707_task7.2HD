@@ -14,8 +14,8 @@ steps:
 
 - name: 'gcr.io/cloud-builders/docker'
   args:
-	[
-	  'push',
+    [
+      'push',
 	  'australia-southeast1-docker.pkg.dev/$PROJECT_ID/calculator-repo/calculator-app'
 	]
 
